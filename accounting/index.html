@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting</title>
+    <link rel="stylesheet" href="../accounting/style.css">
+    <link rel="shortcut icon" href="../assets/contabilidade.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="https://web.whatsapp.com/">
+        <img src="../assets/whatsapp.png" alt="icon-whatsApp" id="wpp"></a>
+
+    <div id="container">
+        <div id="header">
+            <h2>Dev contábil</h2>
+            <div id="link-header1">
+                <a href="#about-Us" class="link-header">Quem somos</a>
+                <a href="#services" class="link-header"> Serviços</a>
+                <a href="#contact" class="link-header">Contato</a>
+            </div>
+            <button id="button-icon" onclick="showmenu()"><img src="../assets/Menu icon.svg" alt=""></button>
+        </div>
+
+        <h1>Dev Contábil</h1>
+
+        <form action="https://formsubmit.co/iza.devfrontend@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <h4>
+                Entre em Contato
+            </h4>
+
+
+            <label for="">
+                Nome
+                <input type="text" placeholder="Seu nome" required>
+            </label>
+            <label for="">
+                Email
+                <input type="email" placeholder="seuemail@gmail.com" required>
+            </label>
+            <label for="">
+                Fale conosco
+                <textarea placeholder="Qual sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit" id="submit-form">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="our-services">Nossos serviços</h2>
+
+    <div id="services">
+
+        <div class="cards">
+            <h3 class="cards-h3">Contabilidade Completa</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <h3 class="cards-h3">Cuidamos do seu negócio</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <h3 class="cards-h3">Cuidamos de você</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="about-Us">
+        <h2 id="about-Us-h2">Sobre nós</h2>
+        <p id="about-Us-p">
+            Estamos presente no mercado há mais de 4 décadas auxiliando nossos clientes nacionais e internacionais que
+            já atuam ou desejam abrir seus negócios e ingressar no Brasil.Assessoramos investidores que queiram
+            prospectar seus negócios no Brasil e investidores (“brasileiros”) interessados em fazer negócios em outros
+            países. Oferecemos “backoffice” nas áreas Financeira, Recursos Humanos, Tributária e Contabilidade,
+            inclusive a abertura, legalização e regularização de empresas e negócios.Com pesquisas de mercado, montamos
+            toda estrutura organizacional, ambiente operacional e logística de suas atividades, com profissionais
+            qualificados, competentes e continuamente treinados.Somos especialistas em empresas tributadas pelo LUCRO
+            REAL e Contabilidade em IFRS. Assim, o Planejamento das operações e suas consequências tributárias passam a
+            ser condições de competitividade, inclusive sugerindo incorporação ou desmembramento de atividades.
+        </p>
+    </div>
+
+    <div id="contact">
+
+        <h2 id="h2-contact">Contato</h2>
+
+        <a href="#about-Us" class="link-contact">Quem somos?</a>
+        <a href="#services" class="link-contact">Serviços</a>
+        <a href="#header" class="link-contact">Voltar ao topo</a>
+
+        <div id="container-contact">
+
+            <img src="../assets/location.png" alt="location" class="img-icon">
+            <p>2184 Freedom Lane, <br> Pine Grove <br>
+                United States</p>
+
+            <img src="../assets/phone-call.png" alt="phone-call" class="img-icon">
+            <p>+01 -99999-9999</p>
+        </div>
+        <footer>
+            Desenvolvido por <a href="https://www.linkedin.com/in/izabela-guimar%C3%A3es-nascimento-7a15621bb/"
+                id="link-me">Izabela Guimaraes</a>
+        </footer>
+    </div>
+</body>
+<script>
+    const menulist = document.getElementById("link-header1")
+
+    menulist.style.maxHeight = "0px"
+
+    function showmenu(){
+
+        if(menulist.style.maxHeight == "0px"){
+            menulist.style.maxHeight = "120px"
+        }
+        else{
+            menulist.style.maxHeight = "0px"
+        } 
+    }
+
+</script>
+</html>

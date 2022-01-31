@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacy</title>
+    <link rel="stylesheet" href="../advocacy/style.css">
+    <link rel="shortcut icon" href="../assets/balance.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="https://web.whatsapp.com/">
+        <img src="../assets/whatsapp.png" alt="icon-whatsApp" id="wpp"> </a>
+
+    <div id="container">
+        <div id="header">
+            <h2>D&C Advogados</h2>
+            <div id="link-header1">
+                <a href="#about-Us" class="link-header">Quem somos</a>
+                <a href="#services" class="link-header">Serviços</a>
+                <a href="#contact" class="link-header">Contato</a>
+            </div>
+            <button id="button-icon" onclick="showmenu()"><img src="../assets/Menu icon.svg" alt=""></button>
+        </div>
+
+        <h1>D&C Advogados</h1>
+
+        <p id="p-intro">Que a justiça seja feita, e vamos garantir <br>
+            que seja!</p>
+
+        <form action="https://formsubmit.co/iza.devfrontend@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <h4>Entre em Contato</h4>
+            <label for="">
+                Nome
+                <input type="text" placeholder="Seu nome">
+            </label>
+            <label for="">
+                Email
+                <input type="email" placeholder="seuemail@gmail.com">
+            </label>
+            <label for="">
+                Fale conosco
+                <textarea placeholder="Qual sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit" id="submit-form">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="our-services">Nossos serviços</h2>
+
+    <div id="services">
+        <div class="cards">
+            <h3 class="cards-h3">Advocacia Completa</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <h3 class="cards-h3">Cuidamos do seu negócio</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="cards">
+            <h3 class="cards-h3">Cuidamos de você</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="about-Us">
+        <h2 id="about-Us-h2">Sobre nós</h2>
+        <p id="about-Us-p">
+            Somos um escritório moderno, versátil e dinâmico, cujo objetivo é levar soluções criativas e eficazes aos
+            clientes, tendo como sócios o Dr. Kleber Bissolatti e a Dra. Monique Antonacci, profissionais
+            multidisciplinares com sólida formação e vasta experiência em questões de grande complexidade.Peliciotti
+            Advocacia é um escritório que preza pela qualidade dos serviços jurídicos, com amplo conhecimento
+            e experiência de atuação. Contamos com uma equipe de profissionais experientes para atender nossos clientes
+            de forma personalizada, contemplando as diversas áreas do Direito. Nosso escritório está comprometido em ter
+            os melhores profissionais, advogados, colaboradores e parceiros,
+            empenhados em oferecer seus serviços com grande sensibilidade e comprometimento, com a mais alta competência
+            e comunicação com os clientes.Praticamos a lei com vocação e paixão pela profissão para responder com
+            excelência à confiança depositada em
+            nós pelos nossos clientes.
+        </p>
+    </div>
+
+    <div id="contact">
+
+        <h2 id="h2-contact">Contato</h2>
+
+        <a href="#about-Us" class="link-contact">Quem somos?</a>
+        <a href="#services" class="link-contact">Serviços</a>
+        <a href="#header" class="link-contact">Voltar ao topo</a>
+
+        <div id="container-contact">
+
+            <img src="../assets/location.png" alt="location" class="img-icon">
+            <p>2184 Freedom Lane, <br> Pine Grove <br>
+                United States</p>
+
+            <img src="../assets/phone-call.png" alt="phone-call" class="img-icon">
+            <p>+01 -99999-9999</p>
+        </div>
+
+        <footer>
+            Desenvolvido por <a href="https://www.linkedin.com/in/izabela-guimar%C3%A3es-nascimento-7a15621bb/"
+                id="link-me">Izabela Guimaraes</a>
+        </footer>
+    </div>
+</body>
+<script>
+    const menulist = document.getElementById("link-header1")
+
+    menulist.style.maxHeight = "0px"
+
+    function showmenu() {
+
+        if (menulist.style.maxHeight == "0px") {
+            menulist.style.maxHeight = "120px"
+        }
+        else {
+            menulist.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+
+</html>

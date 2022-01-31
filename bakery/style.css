@@ -1,0 +1,322 @@
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#container{
+    background-image: url(../assets/bakery.svg);
+    background-size: cover;
+    height: 95vh;
+}
+
+#header{
+    padding-top: 25px;
+    margin-left: 35px;
+}
+
+#wpp{
+    position: fixed;
+    float: right;
+    width: 60px;
+    height: 60px;
+    margin: 0 5px 20px 0;
+    right: 0; 
+    bottom: 0;
+}
+
+h2{
+    font-size: 24px;
+    color: #FFFFFF;
+    display: inline;
+    margin-left: 20px;
+}
+
+h1{
+    position: relative;
+    top: 280px;
+    font-size: 58px;
+    color: #FFFFFF;
+    margin-left: 35px;
+}
+
+.link-header{
+    display: inline;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.link-header:hover{
+    font-size: 18px;
+}
+
+form{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    float: right;
+    padding: 20px;
+    margin-right: 70px;
+    bottom: 25px;
+    position: relative;
+    bottom: 100px;
+}
+
+input{
+    display: block;
+    background-color:#F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    display: block;
+    background-color:#F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height: 80px;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 24px;
+    color:#252B42;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label{
+    font-size: 14px;
+    color: #252B42;
+    
+}
+
+#submit-form{
+    width: 250px;
+    height: 52px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #40BB15;
+    color: #FFFFFF;
+}
+
+#our-services{
+    font-size: 40px;
+    color: #252B42;
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    
+}
+
+.cards{
+    background-color: #EEF6FF;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cards-h3{
+    background-color: #40BB15;
+    border-radius: 10px 10px 0 0 ;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+ul{
+    padding: 30px;
+}
+
+li{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+#services{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#about-Us{
+    background-color: #1E2844;
+}
+
+#about-Us-h2{
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+#about-Us-p{
+    font-size: 18px;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 20px 50px 50px 50px;
+      text-align: justify;
+}
+
+.img-icon{
+    height: 20px;
+    width: 20px;
+}
+
+#contact{
+    background-color: #d3d3d3d3;
+    height: 50vh;
+}
+
+#h2-contact{
+    
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    color: #000000;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.link-contact{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    color: #000000;
+}
+
+#container-contact{
+    float: right;
+    margin: -100px 50px 100px 0;
+    
+}
+
+footer{
+   display: block;
+   text-align: center;
+   padding: 50px 200px ;
+}
+
+#link-me{
+    text-decoration: none;
+}
+
+#button-icon{
+    border: none;
+    background: transparent;
+    float: right;
+    display: none;
+}
+
+@media (max-width: 1300px){
+    *{
+       
+        overflow-x: hidden;    
+    }
+
+    h1{
+        display: none;
+    }
+
+    #container{
+        background-image: url(../assets/img-mobile-bakery.jpg)
+    }
+
+    #wpp{
+        margin-right: 15px;
+    }
+
+    form{
+        margin-top: 150px;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    
+    }
+
+    #services{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .cards{
+        margin-bottom: 25px;
+    }
+
+    #about-Us-p{
+          text-align: justify;
+          justify-content: space-between;
+    }
+
+    footer{
+        padding: 0; 
+        display: block; 
+        width: 20vh; 
+        font-size: 18px;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        padding-top: 150px;
+    }
+
+    #link-header1{
+        position: relative;
+        top: -40px;
+        text-align: right;
+        overflow: hidden;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .link-header{    
+        display: block;
+        margin-top: 7px;
+        margin-right: 15px;
+        font-size: 18px;
+    }  
+    
+    #button-icon{
+        display: block;
+        cursor: pointer;
+        margin-bottom: 30px;
+        margin-top: -15px;
+        margin-right: 20px;
+    }
+
+}
+@media (max-width: 390px){
+    #contact , footer{
+        font-size: 13px
+    }
+
+    footer{
+        padding-bottom: 80px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .link-header{
+        font-size: 16px;
+    }
+}
